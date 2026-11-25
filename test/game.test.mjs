@@ -23,13 +23,13 @@ test('tres hallazgos únicos completan el juego en cualquiera de los seis órden
     assert.equal(getClue(state).title, '¡Encontraste el tesoro!');
   }
 });
-test('el recorrido habitual ofrece las pistas Entrada, Galería y Patio', () => {
+test('el recorrido habitual ofrece las pistas Clase, Galería y Terraza', () => {
   let state = createState();
-  assert.equal(getClue(state).title, 'Primera pista · Entrada');
+  assert.equal(getClue(state).title, 'Primera pista · Clase');
   state = discover(state, 0);
   assert.equal(getClue(state).title, 'Siguiente pista · Galería');
   state = discover(state, 1);
-  assert.equal(getClue(state).title, 'Siguiente pista · Patio');
+  assert.equal(getClue(state).title, 'Siguiente pista · Terraza');
   state = discover(state, 2);
   assert.equal(getClue(state).title, '¡Encontraste el tesoro!');
   assert.ok(getClue(state).text.includes('cofre'));
@@ -49,7 +49,7 @@ test('restaura los hallazgos y reiniciar persiste una partida vacía', () => {
   saveState(storage, createState());
   assert.deepEqual(loadState(storage).found, []);
   assert.equal(isComplete(loadState(storage)), false);
-  assert.equal(getClue(loadState(storage)).title, 'Primera pista · Entrada');
+  assert.equal(getClue(loadState(storage)).title, 'Primera pista · Clase');
 });
 test('sigue funcionando con almacenamiento denegado, lleno o corrupto', () => {
   const storage = { getItem() { throw Error('denegado'); }, setItem() { throw Error('lleno'); } };

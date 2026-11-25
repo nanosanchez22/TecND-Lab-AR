@@ -8,16 +8,16 @@ Búsqueda del tesoro en realidad aumentada con **AR.js 3.4.8** y **A-Frame 1.8.0
 ## Preparar el recorrido
 
 1. Imprimir los tres marcadores en papel blanco, al 100 %, conservando el borde negro y el margen blanco.
-2. Colocarlos en **Entrada → Galería → Patio**, con buena luz y sin reflejos.
+2. Colocarlos en **Clase → Galería → Terraza**, con buena luz y sin reflejos.
 3. Compartir la URL del juego. Cada jugador toca **Abrir cámara** y permite su uso.
 
-Los lugares son ejemplos y deben adaptarse al edificio. Editar los nombres y pistas en `public/js/game.js` y ejecutar `npm run markers` para actualizar las hojas.
+La búsqueda comienza en la clase y termina en la terraza. Para ajustar los lugares del recorrido, editar los nombres y pistas en `public/js/game.js` y ejecutar `npm run markers` para actualizar las hojas.
 
-| Marcador | Objeto | Ubicación de ejemplo |
+| Marcador | Objeto | Ubicación |
 | --- | --- | --- |
-| [entrada.svg](public/markers/entrada.svg) | Llave | Entrada |
+| [clase.svg](public/markers/clase.svg) | Llave | Clase |
 | [galeria.svg](public/markers/galeria.svg) | Brújula | Galería |
-| [patio.svg](public/markers/patio.svg) | Gema | Patio |
+| [terraza.svg](public/markers/terraza.svg) | Gema | Terraza |
 
 ## Cómo funciona
 

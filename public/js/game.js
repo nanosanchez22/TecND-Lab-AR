@@ -1,7 +1,7 @@
 export const STATIONS = Object.freeze([
-  Object.freeze({ id: 0, name: 'Entrada', symbol: 'Llave', marker: 'entrada.svg', hint: 'Buscá el marcador de Entrada, donde comienza el recorrido por el Sacré Coeur.' }),
+  Object.freeze({ id: 0, name: 'Clase', symbol: 'Llave', marker: 'clase.svg', hint: 'Buscá el marcador en la clase, donde comienza la búsqueda del tesoro.' }),
   Object.freeze({ id: 1, name: 'Galería', symbol: 'Brújula', marker: 'galeria.svg', hint: 'La llave abrió el camino. Caminá hasta la Galería y buscá allí el próximo marcador.' }),
-  Object.freeze({ id: 2, name: 'Patio', symbol: 'Gema', marker: 'patio.svg', hint: 'La brújula te guía al aire libre. Andá al Patio y buscá el último marcador.' }),
+  Object.freeze({ id: 2, name: 'Terraza', symbol: 'Gema', marker: 'terraza.svg', hint: 'La brújula te guía al aire libre. Andá a la Terraza y buscá el último marcador.' }),
 ]);
 const validIds = new Set(STATIONS.map(station => station.id));
 const STORAGE_KEY = 'sacre-coeur:hunt:v1';
@@ -34,7 +34,7 @@ export function getClue(state, afterId = state.found.at(-1) ?? -1) {
   const text = next.id === 1 && !state.found.includes(0)
     ? 'Caminá hasta la Galería y buscá allí el marcador de la brújula.'
     : next.id === 2 && !state.found.includes(1)
-      ? 'Andá al Patio y buscá allí el marcador de la gema.'
+      ? 'Andá a la Terraza y buscá allí el marcador de la gema.'
       : next.hint;
   return { title: (state.found.length ? 'Siguiente pista · ' : 'Primera pista · ') + next.name, text };
 }
