@@ -1,0 +1,56 @@
+[
+  {
+    "path": "vendor/aframe-1.8.0.min.js",
+    "source": "https://aframe.io/releases/1.8.0/aframe.min.js",
+    "bytes": 1323396,
+    "sha256": "27a49c530c18c0710f5d0b9492934d5ba6670fe492be37a5e5ea890f26a9864f"
+  },
+  {
+    "path": "vendor/aframe-ar-3.4.8.js",
+    "source": "https://raw.githubusercontent.com/AR-js-org/AR.js/3.4.8/aframe/build/aframe-ar.js",
+    "bytes": 1678488,
+    "sha256": "aec697f1662c8c2f2257eac149641a9f7b34c7c235fabcf7f67666a711ff917d"
+  },
+  {
+    "path": "vendor/camera_para.dat",
+    "source": "https://raw.githubusercontent.com/AR-js-org/AR.js/3.4.8/data/data/camera_para.dat",
+    "bytes": 176,
+    "sha256": "dc0487240de94aafab0f6106c6d9faf79b70f22de0faf3281d341e33edd777ed"
+  },
+  {
+    "path": "vendor/AFRAME-LICENSE",
+    "source": "https://raw.githubusercontent.com/aframevr/aframe/v1.8.0/LICENSE",
+    "bytes": 1081,
+    "sha256": "b95e475bf6ac9fe406e46cb49474194e425c4eff2c480701e4d314ab886e394f"
+  },
+  {
+    "path": "vendor/ARJS-LICENSE",
+    "source": "https://raw.githubusercontent.com/AR-js-org/AR.js/3.4.8/LICENSE",
+    "bytes": 1062,
+    "sha256": "a1f95e66eddf8634d15c6a743e292a88dd56eca8cc23c33f923c01b0af5c752f"
+  },
+  {
+    "path": "markers/0.png",
+    "source": "https://raw.githubusercontent.com/nicolocarpignoli/artoolkit-barcode-markers-collection/master/3x3/0.png",
+    "bytes": 515,
+    "sha256": "28a0584f0fe049f9b7c5b98104d862051af4a84ae25364e4f677b973d0cef568"
+  },
+  {
+    "path": "markers/1.png",
+    "source": "https://raw.githubusercontent.com/nicolocarpignoli/artoolkit-barcode-markers-collection/master/3x3/1.png",
+    "bytes": 515,
+    "sha256": "0799c0e19e701b373230271d8f0f7dd70ec5050d2f249ab66b176eff5fb585b1"
+  },
+  {
+    "path": "markers/2.png",
+    "source": "https://raw.githubusercontent.com/nicolocarpignoli/artoolkit-barcode-markers-collection/master/3x3/2.png",
+    "bytes": 515,
+    "sha256": "3f8acb8494848659510cf8843230023e022f54cc70ef30bdffd7bd34ade7780e"
+  },
+  {
+    "path": "vendor/MARKERS-README.md",
+    "source": "https://raw.githubusercontent.com/nicolocarpignoli/artoolkit-barcode-markers-collection/master/Readme.md",
+    "bytes": 3383,
+    "sha256": "a9609c4440baf9a5e53821ffd4e3e4bcfc8e312cb7851f5f298fcbd6b1008684"
+  }
+]

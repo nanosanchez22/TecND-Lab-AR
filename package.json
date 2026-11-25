@@ -1,0 +1,16 @@
+{
+  "name": "tesoro-sacre-coeur",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Búsqueda del tesoro con tres marcadores AR, pistas y un final.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "build": "node scripts/build-site.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "markers": "node scripts/prepare-markers.mjs",
+    "vendor": "node scripts/fetch-vendor.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

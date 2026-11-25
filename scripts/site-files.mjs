@@ -1,0 +1,21 @@
+// Explicit publication list: development tools and source metadata stay out of the site.
+export const SITE_FILES = Object.freeze([
+  'index.html',
+  'markers.html',
+  'viewer.html',
+  'styles.css',
+  'assets/compass.svg',
+  'js/app.js',
+  'js/game.js',
+  'js/models.js',
+  'js/viewer.js',
+  'markers/entrada.svg',
+  'markers/galeria.svg',
+  'markers/patio.svg',
+  'vendor/aframe-1.8.0.min.js',
+  'vendor/aframe-ar-3.4.8.js',
+  'vendor/camera_para.dat',
+  'vendor/AFRAME-LICENSE',
+  'vendor/ARJS-LICENSE',
+  'vendor/MARKERS-README.md',
+]);

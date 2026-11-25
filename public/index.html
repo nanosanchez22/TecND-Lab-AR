@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10272d">
+  <meta name="description" content="Encontrá tres marcadores, seguí las pistas y descubrí el tesoro del Sacré Coeur con la cámara de tu celular.">
+  <title>El tesoro del Sacré Coeur</title>
+  <link rel="icon" href="./assets/compass.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <main class="game">
+    <header class="heading"><img src="./assets/compass.svg" alt="" width="34" height="34"><div><h1>El tesoro del Sacré Coeur</h1><p>Encontrá los marcadores. Seguí las pistas.</p></div><strong id="count" aria-label="0 de 3 símbolos encontrados">0/3</strong></header>
+    <div class="collection" id="collection" aria-label="Símbolos encontrados"></div>
+    <section class="feedback" id="feedback" aria-live="polite" aria-atomic="true"><h2 id="clue-title">Primera pista · Entrada</h2><p id="clue">Buscá el marcador de Entrada, donde comienza el recorrido por el Sacré Coeur.</p></section>
+    <section class="camera" id="camera" aria-label="Cámara de realidad aumentada">
+      <div id="frame-mount"></div>
+      <div class="start-screen" id="start-screen"><svg class="camera-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="m20 17 5-7h14l5 7h12v35H8V17h12Z"/><circle cx="32" cy="33" r="12"/></svg><h2>Tres símbolos. Un tesoro.</h2><p>Abrí la cámara y enfocá los marcadores del recorrido para descubrir sus objetos y pistas.</p><button class="button primary" id="start">Abrir cámara</button></div>
+      <p class="camera-status" id="camera-status" role="status" hidden>Preparando cámara…</p>
+      <div class="target" id="target" aria-hidden="true" hidden><i></i><i></i><i></i><i></i></div>
+      <div class="camera-error" id="camera-error" hidden role="alert"><h2>No pudimos iniciar la cámara.</h2><p id="error-message"></p><button class="button primary" id="retry">Reintentar</button></div>
+    </section>
+    <div class="controls"><button class="button secondary" id="reset">Reiniciar</button><button class="button secondary" id="stop" hidden>Apagar cámara</button><a class="markers-link" href="./markers.html" target="_blank" rel="noopener">Ver e imprimir marcadores</a></div>
+    <p class="save-warning" id="save-warning" hidden role="status">Podés jugar, pero este navegador no permite guardar el progreso al cerrar la página.</p>
+    <details class="instructions"><summary>Cómo jugar</summary><ol><li>Empezá en Entrada y enfocá el marcador completo, con su borde negro y margen blanco.</li><li>Descubrí el objeto 3D y leé la pista que te lleva al siguiente lugar.</li><li>Reuní la llave, la brújula y la gema para revelar el tesoro.</li></ol><p>Tu pista queda guardada aunque dejes de enfocar el marcador. También podés encontrar los símbolos en otro orden; la próxima pista te llevará a uno que te falte.</p><p>Para preparar el recorrido, imprimí los tres marcadores y colocalos en Entrada, Galería y Patio. Son ubicaciones de ejemplo que pueden adaptarse al edificio.</p><p class="small">Buscá buena luz y evitá reflejos. La cámara necesita HTTPS o localhost. No hace falta instalar una aplicación.</p></details>
+  </main>
+  <noscript><p>Activá JavaScript para jugar.</p></noscript>
+</body>
+</html>
